@@ -1,5 +1,5 @@
 import validator from "validator";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";  // Use bcryptjs instead of bcrypt
 import jwt from "jsonwebtoken";
 import userModel from "../models/userModel.js";
 
