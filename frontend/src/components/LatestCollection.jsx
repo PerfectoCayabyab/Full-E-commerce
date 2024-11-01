@@ -42,26 +42,10 @@ const LatestCollection = () => {
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6">
         {loading
           ? Array.from({ length: 10 }).map((_, index) => (
-              <div
-                key={index}
-                className="relative w-full"
-                style={{ height: 280 }} // fixed height to match ProductItem
-              >
-                <Skeleton
-                  height={192}
-                  width="100%"
-                  style={{ position: "absolute", top: 0, left: 0 }}
-                />
-                <Skeleton
-                  width="75%"
-                  height={20}
-                  style={{ marginTop: 200, position: "absolute", top: 200, left: 0 }}
-                />
-                <Skeleton
-                  width="50%"
-                  height={20}
-                  style={{ marginTop: 8, position: "absolute", top: 230, left: 0 }}
-                />
+              <div key={index} className="w-full h-[280px] flex flex-col justify-start items-center">
+                <Skeleton height={192} width="100%" />
+                <Skeleton width="75%" height={20} style={{ marginTop: 8 }} />
+                <Skeleton width="50%" height={20} style={{ marginTop: 4 }} />
               </div>
             ))
           : latestProducts.map((item, index) => (
