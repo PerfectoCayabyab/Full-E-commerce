@@ -11,8 +11,8 @@ const NewsletterBox = () => {
         Subscribe now & get 20% off
       </p>
       <p className="text-gray-400 mt-3">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
-        accusantium voluptas quas odit libero qui.
+        Join the Latest Fashion family and enjoy exclusive access to the hottest
+        trends, early product drops, and special offers.
       </p>
       <form
         onSubmit={onSubmitHandler}
